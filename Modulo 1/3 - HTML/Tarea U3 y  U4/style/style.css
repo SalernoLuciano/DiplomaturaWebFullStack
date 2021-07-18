@@ -1,0 +1,66 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*::before {
+    color: #AAAAAA;
+}
+
+body{
+    background-color: #476072;
+}
+
+.cabecera{
+    background-color: #222233;
+    text-align: center;
+    padding: 5px 0;
+    border: 2px solid #3EDBF0;
+    border-radius: 20px;
+}
+
+h1{
+    background-color: #333344;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 5px;
+    margin: 1% 40%;
+    border: 2px solid #3EDBF0;
+    border-radius: 20px;
+}
+
+#edad::before{
+    content: "Edad: ";
+}
+
+#direccion::before{
+    content: "Dirección: ";
+}
+
+p i{
+    display: block;
+    background-color: #333344;
+    text-align: center;
+    border: 2px solid #3EDBF0;
+    border-radius: 20px;
+}
+
+p b{
+    display: block;
+    background-color: #333344;
+    text-align: center;
+    border: 2px solid #3EDBF0;
+    border-radius: 20px;
+}
+
+.info{
+    background-color: #333344;
+    border-radius: 20px;
+    border: 2px solid #3EDBF0;
+    text-align:justify;
+    padding: 5px;
+}
+
+#edad, #direccion, ul, ol, li, p{
+    color: #EEEEEE;
+}
