@@ -82,5 +82,19 @@ ol li{
 }
 
 .fas::before, .far::before {
-    color: yellow;
+    color: #ec579d;
+    font-size: 20px;
+}
+
+li{
+    margin: 5px 0;
+}
+
+a{
+    text-decoration:none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: #AAAAAA;
 }
