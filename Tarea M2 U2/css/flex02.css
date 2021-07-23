@@ -1,0 +1,36 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 600px;
+    width: 600px;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.rojo, .azul, .verde{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.verde{
+    background-color: green;
+}
