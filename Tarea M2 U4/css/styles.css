@@ -1,0 +1,47 @@
+body{
+    background-color: #bdbdbd;
+}
+
+.nav-link, .nav-link:hover, .nav-link:focus{
+    color: #fdd40d;
+}
+
+.responsiveNav{
+    visibility: hidden;
+}
+
+.offcanvas-body{
+    background-color: #212529;
+}
+
+.offcanvas-title{
+    color: #fdd40d;
+}
+
+.navbar-dark .navbar-toggler{
+    color: #fdd40d88;
+    border-color: #fdd40d88;
+}
+
+.offcanvas-header{
+    background-color: #212529;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #fdd40d88;
+    border-color: #fdd40d;
+}
+
+
+
+@media screen and ( max-width: 800px) {
+
+    .responsiveNav{
+        visibility: visible;
+    }
+
+    .desktopNav{
+        visibility: hidden;
+    }
+
+}
