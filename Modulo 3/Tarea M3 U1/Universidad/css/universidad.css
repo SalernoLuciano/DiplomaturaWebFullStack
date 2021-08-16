@@ -16,6 +16,14 @@ footer{
     text-align: center;
 } 
 
+i{
+    text-shadow: 0 0 1em rgb(254, 190, 16);
+}
+
+.bi.bi-bank2{
+    text-shadow: 0 0 .5em white;
+}
+
 /* ESTILOS NAV */
 
     .nav-link, .nav-link:focus{
@@ -108,16 +116,19 @@ footer{
 /* ESTILOS SERVICIOS */
 
     .service{
-        border: 2px solid rgb(254, 190, 16);
+        border: 1px solid rgb(254, 190, 16);
+        box-shadow: 0 0 1em rgb(254, 190, 16);
         border-radius: .7em;
-        margin:  2em 0;
+        margin:  2em auto;
         padding: 1em;
         overflow: hidden;
+        width: 80%;
+        align-items: center;
     }
 
 
     .service .info{
-        width: 75%;
+        width: 70%;
     }
 
     .service .info h4{
@@ -165,6 +176,9 @@ footer{
 
 /* ESTILOS NEWS */
 
-
+.fecha{
+    font-style: italic;
+    font-size: .9em;
+}
 
 /* FIN ESTILOS NEWS */
