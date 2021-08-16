@@ -34,7 +34,7 @@ footer{
 
 .card{
     display: inline-flex;
-    width: 22.5%;
+    width: 285px;
     text-align: center;
     align-items: center;
     margin-bottom: 2%;
@@ -78,7 +78,7 @@ footer{
 .card:hover{
     box-shadow: 0 0 20px rgb(254, 190, 16);
     background-color: rgba(161, 92, 92, 0.1);
-    top: -10px;
+    top: -5px;
 }
 
 h1, h2, h3, h4, h5, h6{
