@@ -175,10 +175,10 @@ i{
         padding: .6em;
     }
 
-.columna.left{
-    width: 70%;
-    float: left;
-}
+    .columna.left{
+        width: 70%;
+        float: left;
+    }
 
     .columna.right{
         width: 30%;
@@ -240,7 +240,6 @@ i{
         text-align: center;
         margin-bottom: 1em;
     }
-
 
 /* FIN ESTILOS CONTACTO */
 
