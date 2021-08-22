@@ -170,26 +170,26 @@ i{
 
 /* ESTILOS CONTACTO */
 
-    .contacto{
+    .columna{
         box-sizing: border-box;
         padding: .6em;
     }
 
-    .contacto.left{
+    .columna.left{
         width: 70%;
         float: left;
     }
 
-    .contacto.right{
+    .columna.right{
         width: 30%;
         float: right;
     }
 
-    .contacto.right p{
+    .columna.right p{
         font-size: .9em;
     }
 
-    .contacto.right ul li{
+    .columna.right ul li{
         font-size: .8em;
     }
 
