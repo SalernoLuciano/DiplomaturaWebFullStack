@@ -1,6 +1,6 @@
 var distancia = Math.random()*150000;
 
-document.write( "Ejercicio N° 1<br>Distancia: " + distancia.toPrecision(6) + " <br>Transporte:  ");
+document.write( "Ejercicio N° 1<br>Distancia: " + distancia.toPrecision(6) + " <br>Transporte: ");
 
 if( distancia <= 1000 ){
     document.write( "Pie" );
