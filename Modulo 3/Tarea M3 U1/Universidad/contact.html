@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Universidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/universidad.css">
+</head>
+<body>
+
+<!-- Barra de navegacion de la pagina -->
+    <nav class="desktopNav navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Logo y Nombre de la empresa -->
+            <a href="index.html" class="navbar-brand">
+                <!-- <i class="bi bi-bank"></i> -->
+                <i class="bi bi-bank2"></i>
+                <b class="tit-header">Universidad</b> 
+            </a>
+
+          <!-- Opciones de navegacion -->
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"><b>News</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html"><b>Services & Equipment</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link activo" href="contact.html" tabindex="-1" aria-disabled="true"><b>Contact</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-sm">
+      <h1><i class="bi bi-envelope-open"></i> Contacto</h1>
+      <hr>
+      <div class="columna left">
+          <!-- Fomulario para eventos -->
+          <form action="" method="" class="formulario">
+            <div class="form-section">
+              <h2>Datos Personales</h2>
+              <p>
+                <label for="">Coordinador</label>
+                <input type="text">
+              </p>
+              <p>
+                <label for="">Email</label>
+                <input type="email">
+              </p>
+              <p>
+                <label for="">Interno</label>
+                <input type="tel">
+              </p>
+            </div>
+            <div class="form-section">
+              <h2>Datos de Evento</h2>
+              <p>
+                <label for="">Nombre del Evento</label>
+                <input type="text">
+              </p>
+              <p>
+                <label for="">Fecha del Evento</label>
+                <input type="date">
+              </p>
+              <p>
+                <label for="">Hora del Evento</label>
+                <input type="time">
+              </p>
+              <p>
+                <label for="">Aula Reservada</label>
+                <select name="" id="">
+                  <optgroup label="Alcorta">
+                    <option value="">AS1</option>
+                    <option value="">AS2</option>
+                    <option value="">AS3</option>
+                    <option value="">Cine</option>
+                    <option value="">AS5</option>
+                    <option value="">AS6</option>
+                    <option value="">A1</option>
+                    <option value="">A2</option>
+                    <option value="">A3</option>
+                    <option value="">A4</option>
+                    <option value="">A5</option>
+                    <option value="">A101</option>
+                    <option value="">A102</option>
+                    <option value="">A103</option>
+                    <option value="">A104</option>
+                    <option value="">A105</option>
+                    <option value="">A106</option>
+                    <option value="">A107</option>
+                    <option value="">A108</option>
+                    <option value="">A109</option>
+                    <option value="">A110</option>
+                    <option value="">A111</option>
+                    <option value="">A112</option>
+                    <option value="">A113</option>
+                    <option value="">A114</option>
+                    <option value="">A115</option>
+                    <option value="">A116</option>
+
+                  </optgroup>
+                  <optgroup label="Saenz Valiente">
+                    <option value="">SVE1</option>
+                    <option value="">SVE2</option>
+                    <option value="">SVE3</option>
+                    <option value="">SVE4</option>
+                  </optgroup>
+                  <optgroup label="Parque">
+                    <option value="">P1</option>
+                    <option value="">P2</option>
+                    <option value="">P3</option>
+                  </optgroup>
+                </select>
+              </p>
+            </div>
+            <div class="form-section">
+              <h2>Pedidos para evento</h2>
+              <p>
+                <label for="">Comentarios</label>
+                <textarea name="" id=""></textarea>
+              </p>
+            </div>
+            <p class="acciones"><input type="submit" value="Enviar"></p>
+          </form>
+      </div>
+      <div class="columna right">
+        <!-- Datos de contacto por diferentes cuestiones -->
+        <h2>Otras vias de contacto</h2>
+        <p>Puede comunicarse con nosotros mediante las siguientes vias:</p>
+        <ul>
+          <li>Interno: 113</li>
+          <li>Mail: logistica@universidad.com</li>
+        </ul>
+      </div>
+      <div class="columna right">
+        <!-- Datos de contacto por diferentes cuestiones -->
+        <h2>Consideraciones</h2>
+        <p>Para una mejor preparacion del evento teneren consideracion:</p>
+        <ul>
+          <li>Enviar los requerimientos con mas de 72hs habiles</li>
+          <li>Ser lo mas especifico posible con el orden de lo pedido, etc.</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+      Desgin by Luciano Salerno &COPY; 2021
+    </footer>
+      
+    <!-- Scripts< -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
