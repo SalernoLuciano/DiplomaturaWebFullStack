@@ -20,10 +20,10 @@ botonRojo.onclick = function(){
 };
 
 botonVerde.onclick = function(){
-    cuadroVerde.style.backgroundColor = 'rgb(13 148 13)';
+    cuadroVerde.style.backgroundColor = 'rgb(8 66 8)';
     cuadroRojo.style.backgroundColor = 'rgb(255 255 255)';
     cuadroAzul.style.backgroundColor = 'rgb(255 255 255)';
-    cuerpo[0].style.backgroundColor = 'rgb(13 148 13)';
+    cuerpo[0].style.backgroundColor = 'rgb(8 66 8)';
 };
 
 botonAzul.onclick = function(){
