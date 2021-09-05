@@ -1,0 +1,41 @@
+body{
+    transition: background-color 1s;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    width: 70%;
+}
+
+.cuadro{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 2em auto;
+    transition: background-color 1s;
+    padding: 2em;
+}
+
+.cuadro:hover{
+    border: 2px solid rgba(50,50,50,0.5);
+}
+
+.botonera{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 1em auto 0 ;
+}
+
+.cuerpo{
+    width: 80%;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: gray;
+    margin: 5em auto ;
+}
