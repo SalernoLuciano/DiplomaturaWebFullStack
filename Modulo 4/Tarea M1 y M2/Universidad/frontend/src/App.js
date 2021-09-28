@@ -3,14 +3,14 @@ import ContactoPage from "./pages/contactoPage";
 import HomePage from "./pages/homePage";
 import NovedadesPage from "./pages/novedadesPage";
 import ServiciosPage from "./pages/serviciosPage";
-import Nav from "./components/layout/Nav";
+import Navigation from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
 
 
 function App() {
   return (
     <Router>
-        <Nav/>
+        <Navigation/>
         <Switch>
           <Route path="/" exact component = {HomePage}/>
           <Route path="/servicios" exact component = {ServiciosPage}/>
