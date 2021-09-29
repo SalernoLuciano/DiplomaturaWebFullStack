@@ -105,7 +105,7 @@ const ContactoPage = (props) => {
             <div class="columna right">
 
                 <h2>Consideraciones</h2>
-                <p>Para una mejor preparacion del evento teneren consideracion: </p>
+                <p>Para una mejor preparacion del evento tener en consideracion: </p>
                 <ul>
                     <li>Enviar los requerimientos con mas de 72hs habiles</li>
                     <li>Ser lo mas especifico posible con el orden de lo pedido, etc.</li>
