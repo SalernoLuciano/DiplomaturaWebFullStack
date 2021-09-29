@@ -1,3 +1,5 @@
+import '../styles/components/pages/novedadesPage.css';
+
 const NovedadesPage = (props) => {
     return (
         <main class="container-sm">
