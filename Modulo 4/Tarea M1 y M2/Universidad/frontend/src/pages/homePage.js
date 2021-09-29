@@ -9,17 +9,17 @@ const HomePage = (props) => {
     return (
         <main>
             <div class="container-fluid">
-                <h1 class="container-sm"><i class="bi bi-journal-text"></i> About Us</h1>
+                <h1 class="container-sm">About Us</h1>
                 <p class="container-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti quam voluptas, totam animi debitis est commodi, ea quaerat neque nostrum officiis impedit. Ad dolorem delectus ex quis dignissimos laboriosam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit maiores vel dignissimos quas sapiente amet. Corrupti, magnam. Facere, consectetur? Voluptatem possimus soluta natus id labore quidem exercitationem. Doloribus, sapiente qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam modi illum tempore quod pariatur adipisci fugit, ducimus suscipit porro laborum amet aliquam sint dignissimos, aut, animi corrupti illo doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo ullam porro deleniti distinctio? Quibusdam amet id excepturi nam sapiente rerum ea rem aliquid, odio obcaecati quae quos dolor cum!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero sapiente eaque quo, accusantium cumque eligendi tempore minima. Aperiam autem nesciunt explicabo nulla cumque. Necessitatibus alias magnam aliquam. Dolorem, culpa vitae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt odio harum qui sit laudantium at delectus dolorum alias esse quia, ab minima? Reprehenderit, inventore totam facilis omnis tempora at quidem!Lorem, ipsum dolor sit amet consectetur  </p>
             </div>
             <div class="separador container-xs"></div>
             <div>
-                <h1 class="container-sm"><i class="bi bi-people-fill"></i> Staff</h1>
+                <h1 class="container-sm">Staff</h1>
                 <div class="personas container">
                     <div class="card">
                         <img src= {nosotros1} class="card-img-top" alt="Rodrigo Sánchez"/>
                         <div class ="card-body">
-                        <h5><i class ="bi bi-person-fill"></i> Rodrigo Sánchez</h5>
+                        <h5>Rodrigo Sánchez</h5>
                         <h6>Responsable Aulas y Recepcion</h6>
                         <p class ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
