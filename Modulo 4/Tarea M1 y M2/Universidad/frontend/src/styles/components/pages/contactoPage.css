@@ -1,0 +1,70 @@
+.columna{
+    box-sizing: border-box;
+    padding: .6em;
+}
+
+.columna.left{
+    width: 70%;
+    float: left;
+}
+
+.columna.right{
+    width: 30%;
+    float: right;
+}
+
+.columna.right p{
+    font-size: .9em;
+}
+
+.columna.right ul li{
+    font-size: .8em;
+}
+
+.formulario label{
+    vertical-align: top;
+    width: 25%;
+    display: inline-block;
+}
+
+.formulario input, .formulario textarea{
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: .4em .6em;
+    font-size: .8em;
+    width: 60%;
+}
+
+.formulario textarea{
+    height: 10em;
+}
+
+.formulario input[type="submit"]{
+    background-color: rgb(254, 190, 16);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    font-size: 1em;
+    width: 30%;
+    cursor: pointer;
+}
+
+.formulario{
+    border-right: 1px solid gray;
+    padding: 5%;
+}
+
+.formulario .acciones{
+    text-align: center;
+}
+
+.form-section{
+    border: 1px solid gray;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.form-section h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
