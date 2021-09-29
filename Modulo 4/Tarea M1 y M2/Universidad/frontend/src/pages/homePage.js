@@ -3,6 +3,7 @@ import nosotros2 from '../images/nosotros/nosotros2.jpg';
 import nosotros3 from '../images/nosotros/nosotros3.jpg';
 import nosotros4 from '../images/nosotros/nosotros4.jpg';
 import nosotros5 from '../images/nosotros/nosotros5.jpg';
+import '../styles/components/pages/homePage.css';
 
 const HomePage = (props) => {
     return (
