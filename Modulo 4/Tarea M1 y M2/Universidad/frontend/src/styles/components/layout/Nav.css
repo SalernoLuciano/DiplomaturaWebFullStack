@@ -4,19 +4,19 @@
 }
 
 .active.yellow{
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid rgb(255, 255, 0);
 }
 
 .active.lightblue{
-    border-bottom: 2px solid cyan;
+    border-bottom: 2px solid rgb(0, 255, 255);
 }
 
 .active.fucsia{
-    border-bottom: 2px solid fuchsia;
+    border-bottom: 2px solid rgb(255, 0, 255);
 }
 
 .active.grey{
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid rgb(125, 125, 125);
 }
 
 .NavTitle:hover, .NavButton:hover{

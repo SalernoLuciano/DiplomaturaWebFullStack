@@ -1,7 +1,8 @@
-import proyector from '../images/servicios/proyector.jpg'
-import consola from '../images/servicios/consola.webp'
-import mic from '../images/servicios/mic.jpg'
-import potencia from '../images/servicios/potencia.jpg'
+import proyector from '../images/servicios/proyector.jpg';
+import consola from '../images/servicios/consola.webp';
+import mic from '../images/servicios/mic.jpg';
+import potencia from '../images/servicios/potencia.jpg';
+import '../styles/components/pages/serviciosPage.css';
 
 const ServiciosPage = (props) => {
     return (
