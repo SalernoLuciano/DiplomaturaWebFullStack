@@ -1,5 +1,5 @@
 .card{
-    width: 285px;
+    max-width: 250px;
     text-align: center;
     align-items: center;
     margin-bottom: 2%;
@@ -10,7 +10,7 @@
     transition: all .5s;
 }
 
-.card-img-top{
+img.card-img-top{
     border-radius: 50%;
     margin: .8em 0 .8em;
     max-width: 70%;
