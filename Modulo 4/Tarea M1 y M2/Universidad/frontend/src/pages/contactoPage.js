@@ -2,12 +2,12 @@ import '../styles/components/pages/contactoPage.css';
 
 const ContactoPage = (props) => {
     return (
-        <main class="container-sm">
-            <h1><i class="bi bi-envelope-open"></i> Contacto</h1>
+        <main className="container-sm">
+            <h1><i className="bi bi-envelope-open"></i> Contacto</h1>
             <hr />
-            <div class="columna left">
-                <form action="" method="" class="formulario">
-                    <div class="form-section">
+            <div className="columna left">
+                <form action="" method="" className="formulario">
+                    <div className="form-section">
                         <h2>Datos Personales</h2>
                         <p>
                             <label for="">Coordinador</label>
@@ -22,7 +22,7 @@ const ContactoPage = (props) => {
                             <input type="tel" />
                         </p>
                     </div>
-                    <div class="form-section">
+                    <div className="form-section">
                         <h2>Datos de Evento</h2>
                         <p>
                             <label for="">Nombre del Evento</label>
@@ -83,17 +83,17 @@ const ContactoPage = (props) => {
                             </select>
                         </p>
                     </div>
-                    <div class="form-section">
+                    <div className="form-section">
                         <h2>Pedidos para evento</h2>
                         <p>
                             <label for="">Comentarios</label>
                             <textarea name="" id=""></textarea>
                         </p>
                     </div>
-                    <p class="acciones"><input type="submit" value="Enviar" /></p>
+                    <p className="acciones"><input type="submit" value="Enviar" /></p>
                 </form>
             </div>
-            <div class="columna right">
+            <div className="columna right">
 
                 <h2>Otras vias de contacto</h2>
                 <p>Puede comunicarse con nosotros mediante las siguientes vias: </p>
@@ -102,7 +102,7 @@ const ContactoPage = (props) => {
                     <li>Mail: logistica@universidad.com</li>
                 </ul>
             </div>
-            <div class="columna right">
+            <div className="columna right">
 
                 <h2>Consideraciones</h2>
                 <p>Para una mejor preparacion del evento tener en consideracion: </p>
