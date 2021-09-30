@@ -1,8 +1,10 @@
+import Clock from '../components/layout/Clock';
 import '../styles/components/pages/contactoPage.css';
 
 const ContactoPage = (props) => {
     return (
         <main className="container-sm">
+            <Clock/>
             <h1><i className="bi bi-envelope-open"></i> Contacto</h1>
             <hr />
             <div className="columna left">

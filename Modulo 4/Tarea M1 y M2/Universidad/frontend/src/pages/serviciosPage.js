@@ -3,10 +3,12 @@ import consola from '../images/servicios/consola.webp';
 import mic from '../images/servicios/mic.jpg';
 import potencia from '../images/servicios/potencia.jpg';
 import '../styles/components/pages/serviciosPage.css';
+import Clock from '../components/layout/Clock';
 
 const ServiciosPage = (props) => {
     return (
         <main className="container-sm">
+            <Clock/>
             <h1 className="container-sm"><i className="bi bi-tools"></i> Services & Equipment</h1>
             <div className="service container-sm">
                 <img src={proyector} width="150" alt="Proyector" />

@@ -1,8 +1,10 @@
+import Clock from '../components/layout/Clock';
 import '../styles/components/pages/novedadesPage.css';
 
 const NovedadesPage = (props) => {
     return (
         <main className="container-sm">
+          <Clock/>
     <h1 className="container-sm"><i className="bi bi-newspaper"></i> News</h1>
     <div className="separador"></div>
     <div className="novedad">
