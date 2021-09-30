@@ -4,6 +4,7 @@ import nosotros3 from '../images/nosotros/nosotros3.jpg';
 import nosotros4 from '../images/nosotros/nosotros4.jpg';
 import nosotros5 from '../images/nosotros/nosotros5.jpg';
 import '../styles/components/pages/homePage.css';
+import Card from '../components/layout/Card';
 
 const HomePage = (props) => {
     return (
@@ -16,86 +17,26 @@ const HomePage = (props) => {
             <div>
                 <h1 className="container-sm">Staff</h1>
                 <div className="personas container">
-                    <div className="card">
-                        <img src= {nosotros1} className="card-img-top" alt="Rodrigo Sánchez"/>
-                        <div className ="card-body">
-                        <h5>Rodrigo Sánchez</h5>
-                        <h6>Responsable Aulas y Recepcion</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros2} className="card-img-top" alt="Franco Menéndez"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Franco Menéndez</h5>
-                        <h6>Responsable Aulas (Turno Noche) </h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros3} className="card-img-top" alt="Javier Portela"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Javier Portela</h5>
-                        <h6>Responsable Reserva y carga de espacios</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros4} className="card-img-top" alt="Pablo Mancuso"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Pablo Mancuso</h5>
-                        <h6>Ayudante carga y reserva de espacios</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros5} className="card-img-top" alt="Sergio Hernández"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Sergio Hernández</h5>
-                        <h6>Empleado Aulas</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros1} className="card-img-top" alt="Julián Arozamena"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Julián Arozamena</h5>
-                        <h6>Empleado Aulas</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros2} className="card-img-top" alt="Agustín Scarabel"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Agustín Scarabel</h5>
-                        <h6>Empleado Aulas</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros3} className="card-img-top" alt="Luciano Salerno"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Luciano Salerno</h5>
-                        <h6>Empleado Aulas</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros4} className="card-img-top" alt="Emiliano Lasagna"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Emiliano Lasagna</h5>
-                        <h6>Empleado Aulas</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={nosotros5} className="card-img-top" alt="Federico Arboleas"/>
-                        <div className ="card-body">
-                        <h5><i className ="bi bi-person-fill"></i> Federico Arboleas</h5>
-                        <h6>Empleado Aulas</h6>
-                        <p className ="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
+                    <Card nombre='Rodrigo Sánchez' foto={nosotros1} puesto='Responsable Aulas y Recepcion' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+
+                    <Card nombre='Franco Menendez' foto={nosotros2} puesto='Responsable Aulas (Turno Noche)' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Javier Portela' foto={nosotros3} puesto='Responsable Reserva y carga de espacios' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Pablo Mancuso' foto={nosotros4} puesto='Ayudante carga y reserva de espacios' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Sergio Hernández' foto={nosotros5} puesto='Empleado Aulas' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Julián Arozamena' foto={nosotros1} puesto='Empleado Aulas' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Agustín Scarabel' foto={nosotros2} puesto='Empleado Aulas' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Luciano Salerno' foto={nosotros3} puesto='Empleado Aulas' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Emiliano Lasagna' foto={nosotros4} puesto='Empleado Aulas' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
+                    <Card nombre='Federico Arboleas' foto={nosotros5} puesto='Empleado Aulas' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    
                 </div>
             </div>
         </main>
