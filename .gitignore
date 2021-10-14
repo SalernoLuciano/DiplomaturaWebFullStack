@@ -1,6 +1,5 @@
 *.pdf
 *.mp4
-*txt
 *.rar
 casa.jpg
 dipper.jpg
@@ -9,3 +8,4 @@ mabel.png
 referencia_media.JPG
 node_modules
 *.doc
+robots.txt
