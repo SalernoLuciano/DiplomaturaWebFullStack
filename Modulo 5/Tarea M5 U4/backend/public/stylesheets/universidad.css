@@ -82,3 +82,8 @@ input{
 .col{
     padding: 0 35%;
 }
+
+textarea{
+    resize: none;
+    margin-bottom: 1em;
+}
