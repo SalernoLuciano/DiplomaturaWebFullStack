@@ -60,12 +60,11 @@ router.get('/modificar/:id', async (req, res, next) =>{
 
 router.post('/modificar', async (req, res, next) =>{
   try {
-    let obj = {
+    var obj = {
       titulo: req.body.titulo,
       subtitulo: req.body.subtitulo,
       cuerpo: req.body.cuerpo
     }
-
     await novedadesModel.updateNovedadById(obj, req.body.id);
     res.redirect('/admin/novedades');
   } catch (error) {
