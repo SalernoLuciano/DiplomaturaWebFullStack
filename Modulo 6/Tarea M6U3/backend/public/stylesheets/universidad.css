@@ -1,0 +1,81 @@
+footer{
+    background-color: #cccccc;
+    clear: both;
+    color: #333333;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.NavTitle, .NavButton{   
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.active.yellow{
+    border-bottom: 2px solid rgb(255, 255, 0);
+}
+
+.active.lightblue{
+    border-bottom: 2px solid rgb(0, 255, 255);
+}
+
+.active.fucsia{
+    border-bottom: 2px solid rgb(255, 0, 255);
+}
+
+.active.grey{
+    border-bottom: 2px solid rgb(125, 125, 125);
+}
+
+.NavTitle:hover, .NavButton:hover{
+    border-bottom: 2px solid black;
+}
+
+.NavTitle:hover, .yellow:hover{
+    border-color: yellow;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lightblue:hover{
+    border-color: aqua;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fucsia:hover{
+    border-color: fuchsia;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.grey:hover{
+    border-color: grey;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input{
+    margin-bottom: 1em;
+}
+
+.error{
+    color: red;
+    padding-left: 25%;
+}
+
+.error::before{
+    content: '•';
+}
+
+.puntero{
+    cursor: pointer;
+}
+
+.col-2.text-right{
+    margin-left: auto;
+    text-align: end;
+}
+
+textarea{
+    resize: none;
+    margin-bottom: 1em;
+}
