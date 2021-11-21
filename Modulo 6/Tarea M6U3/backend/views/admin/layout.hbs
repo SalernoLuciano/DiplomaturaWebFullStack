@@ -17,28 +17,12 @@
 <!-- Barra de navegacion de la pagina -->
     <nav class="desktopNav navbar navbar-dark bg-ligth">
         <div class="container-fluid">
-          <!-- Logo y Nombre de la empresa -->
-            <a href="index.html" class="navbar-brand">
-                <!-- <i class="bi bi-bank"></i> -->
                 <i class="bi bi-bank2 NavTitle"></i>
-                <b class="NavTitle">Universidad</b> 
-            </a>
-
-          <!-- Opciones de navegacion -->
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="NavButton yellow" aria-current="page" href="index.html"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="NavButton lightblue" href="news.html"><b>News</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="NavButton fucsia" href="services.html"><b>Services & Equipment</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="NavButton grey" href="contact.html" tabindex="-1" aria-disabled="true"><b>Contact</b></a>
-                </li>
-            </ul>
+                <b class="NavTitle">Universidad</b>
+                <div>
+            <p class="text-end">Hola <b class="puntero">{{usuario}}</b> <a class="btn btn-danger btn-sm"
+                    href="/admin/login/logout">Cerrar Sesión <i class="bi bi-box-arrow-right"></i></a></p>
+        </div> 
         </div>
     </nav>
 
