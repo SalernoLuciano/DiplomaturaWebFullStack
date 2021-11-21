@@ -18,19 +18,19 @@
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Titulo</th>
-                        <th scope="col">Imagen</th>
+                        <th scope="col" class="id-number">#</th>
+                        <th scope="col" class="titulo">Titulo</th>
+                        <th scope="col" class="thumb">Imagen</th>
                         <th scope="col" class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     {{#each novedades}}
                     <tr>
-                        <th scope="row">{{id}}</th>
-                        <td>{{titulo}}</td>
-                        <td>{{{imagen}}}</td>
-                        <td class="text-end">
+                        <th scope="row" class="id-number">{{id}}</th>
+                        <td class="titulo">{{titulo}}</td>
+                        <td class="thumb">{{{imagen}}}</td>
+                        <td class="text-center">
                             <a href="/admin/novedades/modificar/{{id}}" title="Editar" class="btn btn-sm btn-secondary"><i class="bi bi-pen"></i></a>
                             <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></a>
                         </td>

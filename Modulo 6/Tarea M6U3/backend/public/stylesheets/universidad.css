@@ -79,3 +79,26 @@ textarea{
     resize: none;
     margin-bottom: 1em;
 }
+
+img{
+    border-radius: 50%;
+}
+
+img:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.titulo, .id-number, .thumb, .text-center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login{
+    /* padding: 0 40%; */
+    max-width: 300px;
+}
+
+.row-container{
+    justify-content: center;
+    margin: 200px 0;
+}
