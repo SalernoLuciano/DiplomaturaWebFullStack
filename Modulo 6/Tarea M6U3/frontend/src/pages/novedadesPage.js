@@ -9,7 +9,7 @@ const NovedadesPage = (props) => {
   const [loading, setLoading] = useState(false);
   const [novedades, setNovedades] = useState([]);
 
-  useEffect( () =>{
+  useEffect(() => {
     const cargarNovedades = async () => {
       setLoading(true);
       const response = await axios.get('http://localhost:3000/api/novedades');
@@ -26,10 +26,10 @@ const NovedadesPage = (props) => {
       <div className="separador"></div>
       {
         loading ? (
-          <p>Cargando...</p>
-      ) : (
-        novedades.map(item => <NovedadItem key={item.id} title={item.titulo} subtitle={item.subtitulo} image={item.imagen} body={item.cuerpo}/>)
-      )}
+          <div className="spinner-border text-warning" role="status"></div>
+        ) : (
+          novedades.map(item => <NovedadItem key={item.id} title={item.titulo} subtitle={item.subtitulo} image={item.imagen} body={item.cuerpo} />)
+        )}
     </section>
   );
 }

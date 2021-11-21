@@ -10,3 +10,7 @@ h5>b{
 .img-novedad{
     min-width: -webkit-fill-available;
 }
+
+.spinner-border.text-warning{
+    margin-left: 50%;
+}
