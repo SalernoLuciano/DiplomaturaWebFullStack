@@ -18,7 +18,7 @@ const HomePage = (props) => {
             <div className="separador container-xs"></div>
             <div>
                 <h1 className="container-sm">Staff</h1>
-                <div className="personas container">
+                <div className="container personas">
                     <Card nombre='Rodrigo Sánchez' foto={nosotros1} puesto='Responsable Aulas y Recepcion' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>
 
                     <Card nombre='Franco Menendez' foto={nosotros2} puesto='Responsable Aulas (Turno Noche)' descripcion="Some quick example text to build on the card title and make up the bulk of the card's content."/>

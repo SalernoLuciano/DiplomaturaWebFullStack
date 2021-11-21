@@ -26,7 +26,9 @@ const NovedadesPage = (props) => {
       <div className="separador"></div>
       {
         loading ? (
-          <div className="spinner-border text-warning" role="status"></div>
+          <div class="d-flex justify-content-center">
+            <div className="spinner-border text-warning" role="status"></div>
+          </div>
         ) : (
           novedades.map(item => <NovedadItem key={item.id} title={item.titulo} subtitle={item.subtitulo} image={item.imagen} body={item.cuerpo} />)
         )}

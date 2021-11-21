@@ -61,5 +61,5 @@ h1, h2, h3, h4, h5, h6{
 .personas{
     display:flex;
     flex-wrap: wrap;
-    padding-left: 2em;
+    justify-content: space-evenly;
 }
