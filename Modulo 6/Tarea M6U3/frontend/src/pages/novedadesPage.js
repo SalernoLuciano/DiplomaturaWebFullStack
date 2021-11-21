@@ -1,61 +1,36 @@
 import Clock from '../components/layout/Clock';
 import '../styles/components/pages/novedadesPage.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/Novedades/NovedadItem';
 
 const NovedadesPage = (props) => {
+
+  const [loading, setLoading] = useState(false);
+  const [novedades, setNovedades] = useState([]);
+
+  useEffect( () =>{
+    const cargarNovedades = async () => {
+      setLoading(true);
+      const response = await axios.get('http://localhost:3000/api/novedades');
+      setNovedades(response.data);
+      setLoading(false);
+    };
+    cargarNovedades();
+  }, []);
+
   return (
-    <main className="container-sm">
+    <section className="container-sm">
       <Clock />
       <h1 className="container-sm"><i className="bi bi-newspaper"></i> News</h1>
       <div className="separador"></div>
-      <div className="novedad">
-        <h4>Titulo</h4>
-        <h6 className="fecha">Fecha</h6>
-        <p>Noticia - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis sequi distinctio dolores
-          similique debitis cupiditate facilis quos eveniet neque mollitia quo eos, quasi iusto incidunt aspernatur ipsum
-          animi ratione.</p>
-        <hr />
-      </div>
-      <div className="novedad">
-        <h4>Titulo</h4>
-        <h6 className="fecha">Fecha</h6>
-        <p>Noticia - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis sequi distinctio dolores
-          similique debitis cupiditate facilis quos eveniet neque mollitia quo eos, quasi iusto incidunt aspernatur ipsum
-          animi ratione.</p>
-        <hr />
-      </div>
-      <div className="novedad">
-        <h4>Titulo</h4>
-        <h6 className="fecha">Lunes 15 de Agosto de 2021</h6>
-        <p>Noticia - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis sequi distinctio dolores
-          similique debitis cupiditate facilis quos eveniet neque mollitia quo eos, quasi iusto incidunt aspernatur ipsum
-          animi ratione.</p>
-        <hr />
-      </div>
-      <div className="novedad">
-        <h4>Titulo</h4>
-        <h6 className="fecha">Fecha</h6>
-        <p>Noticia - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis sequi distinctio dolores
-          similique debitis cupiditate facilis quos eveniet neque mollitia quo eos, quasi iusto incidunt aspernatur ipsum
-          animi ratione.</p>
-        <hr />
-      </div>
-      <div className="novedad">
-        <h4>Titulo</h4>
-        <h6 className="fecha">Fecha</h6>
-        <p>Noticia - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis sequi distinctio dolores
-          similique debitis cupiditate facilis quos eveniet neque mollitia quo eos, quasi iusto incidunt aspernatur ipsum
-          animi ratione.</p>
-        <hr />
-      </div>
-      <div className="novedad">
-        <h4>Titulo</h4>
-        <h6 className="fecha">Fecha</h6>
-        <p>Noticia - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis sequi distinctio dolores
-          similique debitis cupiditate facilis quos eveniet neque mollitia quo eos, quasi iusto incidunt aspernatur ipsum
-          animi ratione.</p>
-        <hr />
-      </div>
-    </main>
+      {
+        loading ? (
+          <p>Cargando...</p>
+      ) : (
+        novedades.map(item => <NovedadItem key={item.id} title={item.titulo} subtitle={item.subtitulo} image={item.imagen} body={item.cuerpo}/>)
+      )}
+    </section>
   );
 }
 
