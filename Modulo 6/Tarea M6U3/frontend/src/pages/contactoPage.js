@@ -51,34 +51,34 @@ const ContactoPage = (props) => {
                         <h2>Datos Personales</h2>
                         <p>
                             <label for="">Coordinador</label>
-                            <input type="text" name="coordinador" value={formData.coordinador} onChange={handleChange}/>
+                            <input type="text" id="coordinador" name="coordinador" value={formData.coordinador} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Email</label>
-                            <input type="email"  name="email" value={formData.email} onChange={handleChange}/>
+                            <input type="email" id="email"  name="email" value={formData.email} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Interno</label>
-                            <input type="tel" name="interno" value={formData.interno} onChange={handleChange}/>
+                            <input type="tel" id="interno" name="interno" value={formData.interno} onChange={handleChange}/>
                         </p>
                     </div>
                     <div className="form-section">
                         <h2>Datos de Evento</h2>
                         <p>
                             <label for="">Nombre del Evento</label>
-                            <input type="text" name="nombreEvento" value={formData.nombreEvento} onChange={handleChange}/> 
+                            <input type="text" id="nombreEvento" name="nombreEvento" value={formData.nombreEvento} onChange={handleChange}/> 
                         </p>
                         <p>
                             <label for="">Fecha del Evento</label>
-                            <input type="date" name="fecha" value={formData.fecha} onChange={handleChange}/>
+                            <input type="date" id="fecha" name="fecha" value={formData.fecha} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Hora del Evento</label>
-                            <input type="time" name="hora" value={formData.hora} onChange={handleChange}/>
+                            <input type="time" id="hora" name="hora" value={formData.hora} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Aula Reservada</label>
-                            <select name="aula" id="" value={formData.aula} onChange={handleChange}>
+                            <select name="aula" id="aula" value={formData.aula} onChange={handleChange}>
                                 <optgroup label="Alcorta">
                                     <option value="">AS1</option>
                                     <option value="">AS2</option>
@@ -126,7 +126,7 @@ const ContactoPage = (props) => {
                         <h2>Pedidos para evento</h2>
                         <p>
                             <label for="">Comentarios</label>
-                            <textarea name="comentario" id="" value={formData.comentario} onChange={handleChange}></textarea>
+                            <textarea name="comentario" id="comentario" value={formData.comentario} onChange={handleChange}></textarea>
                         </p>
                     </div>
                     {sending ? <p>Enviando...</p> : null}
