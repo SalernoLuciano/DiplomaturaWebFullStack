@@ -1,46 +1,84 @@
 import Clock from '../components/layout/Clock';
 import '../styles/components/pages/contactoPage.css';
+import React, {useState} from 'react';
+import axios from 'axios';
 
 const ContactoPage = (props) => {
+
+    const initialForm = {
+        coordinador: '',
+        email: '',
+        interno: '',
+        nombreEvento: '',
+        fecha: '',
+        hora: '',
+        aula: '',
+        comentario: ''
+    }
+
+    const [sending, setSending] = useState(false);
+    const [msg, setMsg] = useState('');
+    const [formData, setFormData] = useState(initialForm);
+
+    const handleChange = e =>{
+        const {name, value} = e.target;
+        setFormData(oldData => ({
+            ...oldData,
+            [name]: value
+        }));
+    }
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+        setMsg('');
+        setSending(true);
+        const response = await axios.post('http://localhost:3000/api/contacto', formData);
+        setSending(false);
+        setMsg(response.data.message);
+        if(response.data.error === false){
+            setFormData(initialForm);
+        }
+    }
+
     return (
         <main className="container-sm">
             <Clock/>
             <h1><i className="bi bi-envelope-open"></i> Contacto</h1>
             <hr />
             <div className="columna left">
-                <form action="" method="" className="formulario">
+                <form action="" method="" className="formulario" onSubmit={handleSubmit}>
                     <div className="form-section">
                         <h2>Datos Personales</h2>
                         <p>
                             <label for="">Coordinador</label>
-                            <input type="text" />
+                            <input type="text" name="coordinador" value={formData.coordinador} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Email</label>
-                            <input type="email" />
+                            <input type="email"  name="email" value={formData.email} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Interno</label>
-                            <input type="tel" />
+                            <input type="tel" name="interno" value={formData.interno} onChange={handleChange}/>
                         </p>
                     </div>
                     <div className="form-section">
                         <h2>Datos de Evento</h2>
                         <p>
                             <label for="">Nombre del Evento</label>
-                            <input type="text" />
+                            <input type="text" name="nombreEvento" value={formData.nombreEvento} onChange={handleChange}/> 
                         </p>
                         <p>
                             <label for="">Fecha del Evento</label>
-                            <input type="date" />
+                            <input type="date" name="fecha" value={formData.fecha} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Hora del Evento</label>
-                            <input type="time" />
+                            <input type="time" name="hora" value={formData.hora} onChange={handleChange}/>
                         </p>
                         <p>
                             <label for="">Aula Reservada</label>
-                            <select name="" id="">
+                            <select name="aula" id="" value={formData.aula} onChange={handleChange}>
                                 <optgroup label="Alcorta">
                                     <option value="">AS1</option>
                                     <option value="">AS2</option>
@@ -69,7 +107,6 @@ const ContactoPage = (props) => {
                                     <option value="">A114</option>
                                     <option value="">A115</option>
                                     <option value="">A116</option>
-
                                 </optgroup>
                                 <optgroup label="Saenz Valiente">
                                     <option value="">SVE1</option>
@@ -89,9 +126,11 @@ const ContactoPage = (props) => {
                         <h2>Pedidos para evento</h2>
                         <p>
                             <label for="">Comentarios</label>
-                            <textarea name="" id=""></textarea>
+                            <textarea name="comentario" id="" value={formData.comentario} onChange={handleChange}></textarea>
                         </p>
                     </div>
+                    {sending ? <p>Enviando...</p> : null}
+                    {msg ? <p>{msg}</p> : null}
                     <p className="acciones"><input type="submit" value="Enviar" /></p>
                 </form>
             </div>
