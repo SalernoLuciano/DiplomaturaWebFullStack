@@ -1,6 +1,6 @@
 import Clock from '../components/layout/Clock';
 import '../styles/components/pages/contactoPage.css';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const ContactoPage = (props) => {
@@ -20,8 +20,8 @@ const ContactoPage = (props) => {
     const [msg, setMsg] = useState('');
     const [formData, setFormData] = useState(initialForm);
 
-    const handleChange = e =>{
-        const {name, value} = e.target;
+    const handleChange = e => {
+        const { name, value } = e.target;
         setFormData(oldData => ({
             ...oldData,
             [name]: value
@@ -35,14 +35,14 @@ const ContactoPage = (props) => {
         const response = await axios.post('http://localhost:3000/api/contacto', formData);
         setSending(false);
         setMsg(response.data.message);
-        if(response.data.error === false){
+        if (response.data.error === false) {
             setFormData(initialForm);
         }
     }
 
     return (
         <main className="container-sm">
-            <Clock/>
+            <Clock />
             <h1><i className="bi bi-envelope-open"></i> Contacto</h1>
             <hr />
             <div className="columna left">
@@ -51,30 +51,30 @@ const ContactoPage = (props) => {
                         <h2>Datos Personales</h2>
                         <p>
                             <label for="">Coordinador</label>
-                            <input type="text" id="coordinador" name="coordinador" value={formData.coordinador} onChange={handleChange}/>
+                            <input type="text" id="coordinador" name="coordinador" value={formData.coordinador} onChange={handleChange} />
                         </p>
                         <p>
                             <label for="">Email</label>
-                            <input type="email" id="email"  name="email" value={formData.email} onChange={handleChange}/>
+                            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
                         </p>
                         <p>
                             <label for="">Interno</label>
-                            <input type="tel" id="interno" name="interno" value={formData.interno} onChange={handleChange}/>
+                            <input type="tel" id="interno" name="interno" value={formData.interno} onChange={handleChange} />
                         </p>
                     </div>
                     <div className="form-section">
                         <h2>Datos de Evento</h2>
                         <p>
                             <label for="">Nombre del Evento</label>
-                            <input type="text" id="nombreEvento" name="nombreEvento" value={formData.nombreEvento} onChange={handleChange}/> 
+                            <input type="text" id="nombreEvento" name="nombreEvento" value={formData.nombreEvento} onChange={handleChange} />
                         </p>
                         <p>
                             <label for="">Fecha del Evento</label>
-                            <input type="date" id="fecha" name="fecha" value={formData.fecha} onChange={handleChange}/>
+                            <input type="date" id="fecha" name="fecha" value={formData.fecha} onChange={handleChange} />
                         </p>
                         <p>
                             <label for="">Hora del Evento</label>
-                            <input type="time" id="hora" name="hora" value={formData.hora} onChange={handleChange}/>
+                            <input type="time" id="hora" name="hora" value={formData.hora} onChange={handleChange} />
                         </p>
                         <p>
                             <label for="">Aula Reservada</label>
@@ -129,7 +129,9 @@ const ContactoPage = (props) => {
                             <textarea name="comentario" id="comentario" value={formData.comentario} onChange={handleChange}></textarea>
                         </p>
                     </div>
-                    {sending ? <p>Enviando...</p> : null}
+                    {sending ? <div class="d-flex justify-content-center">
+                        <div className="spinner-border text-warning" role="status"></div>
+                    </div> : null}
                     {msg ? <p>{msg}</p> : null}
                     <p className="acciones"><input type="submit" value="Enviar" /></p>
                 </form>
